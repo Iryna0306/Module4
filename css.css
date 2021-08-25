@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  background-color: rgba(84, 65, 105, 0.705);
+  font-family: "Opan Sans", Arial, sana-serif;
+}
+
+.container-page {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  background-color: rgb(99, 165, 196);
+  float: right;
+}
+
+.site-logo {
+  display: inline-block;
+}
+
+.site-navigation {
+  width: 1110px;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  list-style: none;
+}
+
+.site-navigation li {
+  float: left;
+  list-style-type: none;
+  background-color: rgb(172, 20, 20);
+  float: right;
+}
+
+.site-navigation li/*:not(last-child) не работает*/ {
+  margin-right: 34px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0 auto;
+}
+
+.card li {
+  list-style-type: none;
+}
+
+.card-item {
+  margin-right: 28px;
+}
+
+.card-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.section-title-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.section-title-list:nth-child(4n) {
+  margin-right: 0;
+}
+
+.section-title-list-item {
+  width: 350px;
+}
