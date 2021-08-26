@@ -100,7 +100,7 @@ img {
 }
 
 .card-item-box-info {
-  /*display: inline-block;*/
+  display: inline-block;
 }
 
 .subject {
@@ -120,4 +120,24 @@ img {
   color: #fff;
   background-color: rgb(97, 97, 97);
   float: right;
+}
+
+.blog {
+  margin-bottom: 46px;
+}
+
+.blog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-list-item {
+  width: 350px;
+  margin-right: 30px;
+  list-style: none;
+  float: left;
+}
+
+.blog-list-item:last-child {
+  margin-right: 0;
 }
