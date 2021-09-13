@@ -72,14 +72,24 @@ img {
 }
 
 .section-title-heading {
+  position: relative;
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
-  /*width: 600px;*/
+  margin-bottom: 120px;
   /*background-color: rgb(100, 85, 182);*/
+}
+
+.section-title-heading::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 80px);
+  bottom: -40px;
+  width: 164px;
+  height: 4px;
+  background-color: #38c5a7;
 }
 
 .line {
@@ -101,6 +111,10 @@ img {
 
 .card-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.card-item:nth-child(n+4) {
+  margin-bottom: 0;
 }
 
 .subject {
@@ -148,6 +162,20 @@ img {
 
 .blog-list-item:last-child {
   margin-right: 0;
+}
+
+.desc {
+  margin-bottom: 14px;
+}
+
+.desc::after {
+  content: "";
+  width: 164px;
+  height: 4px;
+  position: absolute;
+  left: calc(50% - 40px);
+
+  background-color: #38c5a7;
 }
 
 .button-btn {
