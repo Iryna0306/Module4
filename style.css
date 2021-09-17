@@ -20,9 +20,10 @@ img {
 }
 
 .clearfix::after {
-  display: table;
-  content: "";
+  /*display: table;*/
+  content: '';
   clear: both;
+  display: block;
 }
 
 .container {
@@ -102,7 +103,8 @@ img {
 }
 
 .card-item {
-  width: 256px;
+
+ width: 256px;
   margin-right: 28px;
   margin-bottom: 30px;
   list-style: none;
@@ -117,31 +119,36 @@ img {
   margin-bottom: 0;
 }
 
+.card-item-box-info {
+  height: 40px;
+  background-color: #000;
+}
+
+.card-item-box-info:hover {
+  background-color: #1abc9c;
+}
+
 .subject {
-  display: inline-block;
+  float: left;
   margin: 0;
-  padding: 12px 14px;
-  font-size: 15px;
+  line-height: 40px;
+  padding: 0 5px;
+  width: 216px;
+  color: white;
   text-transform: uppercase;
-  color: #fff;
-  background-color: rgb(43, 42, 42);
-}
-
-.subject:hover {
-  background-color: #38c5a7;
-}
-
-.price:hover {
-  background-color: #93daca;
 }
 
 .price {
-  margin: 0;
-  font-size: 15px;
-  padding: 12px 14px;
-  color: #fff;
+  float: left;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
   background-color: rgb(97, 97, 97);
-  float: right;
+}
+
+.price:hover {
+  background-color: #7fd9c7;
 }
 
 .blog {
@@ -168,7 +175,7 @@ img {
   margin-bottom: 14px;
 }
 
-.desc::after {
+/*.desc::after {
   content: "";
   width: 164px;
   height: 4px;
@@ -176,7 +183,7 @@ img {
   left: calc(50% - 40px);
 
   background-color: #38c5a7;
-}
+}*/
 
 .button-btn {
   margin: 0;
